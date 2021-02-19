@@ -1,6 +1,6 @@
 import turtle as t
 import random
-t.bgcolor('#FFFFFF')
+t.bgcolor('#FFF3FF')
 t.title("Tic Tac Toe")
 #########Characters in Tic Tac Toe e.g. X's and O's###################
 char1 = t.Turtle()
@@ -99,63 +99,63 @@ def enem():
     enemy = random.choice(enimy)
     if enemy == char1:
         char1.hideturtle()
-        char1.write("X", font=("CHALKDUSTER", 128))
+        char1.write("X", font=("CHALKDUSTER", 135))
         box1 = 'x'
         enimy.remove(char1)
         starter = "player"
         loopy()
     if enemy == char2:
         char2.hideturtle()
-        char2.write("X", font=("CHALKDUSTER", 128))
+        char2.write("X", font=("CHALKDUSTER", 135))
         box2 = 'x'
         enimy.remove(char2)
         starter = "player"
         loopy()
     if enemy == char3:
         char3.hideturtle()
-        char3.write("X", font=("CHALKDUSTER", 128))
+        char3.write("X", font=("CHALKDUSTER", 135))
         box3 = 'x'
         enimy.remove(char3)
         starter = "player"
         loopy()
     if enemy == char4:
         char4.hideturtle()
-        char4.write("X", font=("CHALKDUSTER", 128))
+        char4.write("X", font=("CHALKDUSTER", 135))
         box4 = 'x'
         enimy.remove(char4)
         starter = "player"
         loopy()
     if enemy == char5:
         char5.hideturtle()
-        char5.write("X", font=("CHALKDUSTER", 128))
+        char5.write("X", font=("CHALKDUSTER", 135))
         box5 = 'x'
         enimy.remove(char5)
         starter = "player"
         loopy()
     if enemy == char6:
         char6.hideturtle()
-        char6.write("X", font=("CHALKDUSTER", 128))
+        char6.write("X", font=("CHALKDUSTER", 135))
         box6 = 'x'
         enimy.remove(char6)
         starter = "player"
         loopy()
     if enemy == char7:
         char7.hideturtle()
-        char7.write("X", font=("CHALKDUSTER", 128))
+        char7.write("X", font=("CHALKDUSTER", 135))
         box7 = 'x'
         enimy.remove(char7)
         starter = "player"
         loopy()
     if enemy == char8:
         char8.hideturtle()
-        char8.write("X", font=("CHALKDUSTER", 128))
+        char8.write("X", font=("CHALKDUSTER", 135))
         box8 = 'x'
         enimy.remove(char8)
         starter = "player"
         loopy()
     if enemy == char9:
         char9.hideturtle()
-        char9.write("X", font=("CHALKDUSTER", 128))
+        char9.write("X", font=("CHALKDUSTER", 135))
         box9 = 'x'
         enimy.remove(char9)
         starter = "player"
@@ -170,73 +170,74 @@ line1.hideturtle()
 line1.color("#AAAAAA")
 line1.penup()
 line1.setx(-100)
-line1.sety(200)
+line1.sety(250)
 line1.pendown()
 line1.right(90)
-line1.forward(400)
+line1.forward(500)
 
 line2 = t.Turtle()
 line2.hideturtle()
 line2.color("#AAAAAA")
 line2.penup()
 line2.setx(100)
-line2.sety(200)
+line2.sety(250)
 line2.pendown()
 line2.right(90)
-line2.forward(400)
+line2.forward(500)
 
 line3 = t.Turtle()
 line3.hideturtle()
 line3.color("#AAAAAA")
 line3.penup()
-line3.setx(-200)
+line3.setx(-250)
 line3.sety(100)
 line3.pendown()
-line3.forward(400)
+line3.forward(500)
+
 line4 = t.Turtle()
 line4.hideturtle()
 line4.color("#AAAAAA")
 line4.penup()
-line4.setx(-200)
+line4.setx(-250)
 line4.sety(-100)
 line4.pendown()
-line4.forward(400)
+line4.forward(500)
 #######################Variable Displays and funcs and setup#################
 char1.penup()
-char1.sety(120)
-char1.setx(120)
+char1.sety(90)
+char1.setx(-250)
 
 char2.penup()
-char2.sety(120)
-char2.setx(-25)
+char2.sety(90)
+char2.setx(-65)
 
 char3.penup()
-char3.sety(120)
-char3.setx(-200)
+char3.sety(90)
+char3.setx(120)
 
 char4.penup()
-char4.sety(-50)
-char4.setx(-200)
+char4.sety(-100)
+char4.setx(-250)
 
 char5.penup()
-char5.sety(-50)
-char5.setx(-25)
+char5.sety(-100)
+char5.setx(-65)
 
 char6.penup()
-char6.sety(-50)
+char6.sety(-100)
 char6.setx(120)
 
 char7.penup()
-char7.sety(-250)
-char7.setx(-200)
+char7.sety(-280)
+char7.setx(-250)
 
 char8.penup()
-char8.sety(-250)
-char8.setx(-25)
+char8.sety(-280)
+char8.setx(-65)
 
 char9.penup()
-char9.sety(-250)
-char9.setx(150)
+char9.sety(-280)
+char9.setx(120)
 
 box1 = ''
 box2 = ''
@@ -255,13 +256,13 @@ starter = random.choice(first)
 print(" HOW TO PLAY THE GAME:")
 print("")
 print("")
-print("press e for topright, w for topmiddle, q for topleft")
-print("press a for right, s for middle, d for left")
-print("press z for bottomright, x for bottommiddle, c for bottomleft")
+print("press q for top-left, w for top-middle, e for top-right")
+print("press a for left, s for middle, d for right")
+print("press z for bottom-left, x for bottom-middle, c for bottom-right")
 loopy()
-t.onkey(show1, "e")
+t.onkey(show1, "q")
 t.onkey(show2, "w")
-t.onkey(show3, "q")
+t.onkey(show3, "e")
 t.onkey(show4, "a")
 t.onkey(show5, "s")
 t.onkey(show6, "d")
